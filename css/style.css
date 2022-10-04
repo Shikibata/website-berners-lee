@@ -1,0 +1,150 @@
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css");
+
+:root {
+    --rouge : rgb(221, 85, 85);
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 660px auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    color: gray;
+    background-color: #ebebeb;
+    text-align: justify;
+    margin: 10px;
+}
+
+header, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 10px -8px rgb(65, 64, 64);
+}
+
+header, main, section {
+    grid-column: 2;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0px 1px 1px 1px solid lightgrey;
+    padding: 20px;
+}
+
+#img {
+    border-radius: 50%;
+    border: 5px solid lightgrey;
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+h1 {
+    color: var(--rouge);
+    font-size: 32px;
+    margin-top: 28px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+
+#wiki {
+    padding: 1em;
+    background-color: #d42a2a;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    font-weight: 400;
+}
+
+header > p {
+    word-spacing: 4px;
+    line-height: 140%;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+p > b {
+    font-weight: 900;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 40px;
+    box-shadow: 0px 7px 10px -8px #000000;
+}
+
+section ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 1.2rem;
+    gap: 20px;
+
+}
+
+section ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 380px;
+}
+
+ul > li {
+    display: flex;
+    flex-direction: column;
+}
+
+.fab {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1.7);
+    word-spacing: 10px;
+}
+
+section > a {
+    font-size: larger;
+}
+
+main .favMovies {
+    display: grid;
+    align-items: center;
+    align-self: center;
+    grid-template-columns: 20% 80%;
+    padding: 10px 0px 10px 20px;
+    margin: 20px 0px;
+}
+main .favMovies .cover {
+    width: 100%;
+}
+main .favMovies .movie {
+    padding: 0 10px 0 30px;
+    line-height: 1.5em;
+}
+
+main > img {
+    width: 70%;
+}
+
+h3 {
+    text-align: center;
+}
+
+main > p {
+    font-weight: 300;
+}
+
+em {
+    font-style: normal;
+    background-color: lightgrey;
+    padding-top: 5px;
+}
